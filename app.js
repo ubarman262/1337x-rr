@@ -5,7 +5,7 @@ const { extractName } = require("./groq");
 require("dotenv").config();
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 // Radarr API configuration
 const radarrApiKey = process.env.RADARR_API_KEY;
